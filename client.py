@@ -154,9 +154,10 @@ def record(_image, j_data):
 def stopRec():
     global csvfile
     global isStop
-    global run_0 = True
+    global run_0 
 
     if not isStop:
+        run_0 = True
         isStop = True
         csvfile.close()
     return;
